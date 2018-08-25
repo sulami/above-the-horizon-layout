@@ -3,6 +3,7 @@
         width="100%"
         top="50% - height / 2"
         textAlignment="center"
+        textColor="red"
         font="Menlo 32"
         text="Hello, World!"
     />
