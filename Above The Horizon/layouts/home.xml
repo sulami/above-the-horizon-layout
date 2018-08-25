@@ -2,6 +2,8 @@
     <UITableView
         backgroundColor="#fff"
         outlet="tableView"
+        separatorStyle="none"
+        rowHeight="64"
         style="plain">
       <UITableViewCell
           reuseIdentifier="cell"

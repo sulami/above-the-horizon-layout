@@ -12,6 +12,15 @@ import Layout
 
 class ViewController: UIViewController, LayoutLoading, UITableViewDataSource, UITableViewDelegate {
 
+    // TODO: Make this reactive or something.
+    let tasks: [Task] = [
+        "A New Hope",
+        "The Empire Strikes Back",
+        "Return of the Jedi",
+        ].map({
+            title in Task(title: title)
+        })
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -31,15 +40,6 @@ class ViewController: UIViewController, LayoutLoading, UITableViewDataSource, UI
             // This doesn't do anything.
         }
     }
-
-    // TODO: Make this reactive or something.
-    let tasks: [Task] = [
-        "A New Hope",
-        "The Empire Strikes Back",
-        "Return of the Jedi",
-        ].map({
-            title in Task(title: title)
-        })
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tasks.count
