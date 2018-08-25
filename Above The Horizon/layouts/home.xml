@@ -1,0 +1,9 @@
+<UIView backgroundColor="{backgroundColor}" xml="safe-area.xml">
+    <UILabel
+        width="100%"
+        top="50% - height / 2"
+        textAlignment="center"
+        font="Menlo 32"
+        text="Hello, World!"
+    />
+</UIView>

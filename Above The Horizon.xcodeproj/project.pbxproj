@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88298CC8EF564D6EDE238A32 /* Pods_Above_The_Horizon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F993ADC1DCBDCEF942A7ECE2 /* Pods_Above_The_Horizon.framework */; };
 		D4082BD62131803E008D87FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4082BD52131803E008D87FD /* AppDelegate.swift */; };
 		D4082BD82131803E008D87FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4082BD72131803E008D87FD /* ViewController.swift */; };
 		D4082BDB2131803E008D87FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4082BD92131803E008D87FD /* Main.storyboard */; };
 		D4082BDD2131803F008D87FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4082BDC2131803F008D87FD /* Assets.xcassets */; };
 		D4082BE02131803F008D87FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4082BDE2131803F008D87FD /* LaunchScreen.storyboard */; };
+		D4082BEA21318636008D87FD /* layouts in Resources */ = {isa = PBXBuildFile; fileRef = D4082BE921318636008D87FD /* layouts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60E38029A10CE5372071975A /* Pods-Above The Horizon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Above The Horizon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Above The Horizon/Pods-Above The Horizon.release.xcconfig"; sourceTree = "<group>"; };
+		61598FB5EF1EA885DD050BEF /* Pods-Above The Horizon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Above The Horizon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Above The Horizon/Pods-Above The Horizon.debug.xcconfig"; sourceTree = "<group>"; };
 		D4082BD22131803E008D87FD /* Above The Horizon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Above The Horizon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4082BD52131803E008D87FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4082BD72131803E008D87FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		D4082BDC2131803F008D87FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4082BDF2131803F008D87FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4082BE12131803F008D87FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4082BE921318636008D87FD /* layouts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = layouts; sourceTree = "<group>"; };
+		F993ADC1DCBDCEF942A7ECE2 /* Pods_Above_The_Horizon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Above_The_Horizon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88298CC8EF564D6EDE238A32 /* Pods_Above_The_Horizon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4CB393A4D9F65D03F613B781 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F993ADC1DCBDCEF942A7ECE2 /* Pods_Above_The_Horizon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A10B3960D131CBFBB9EBC180 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61598FB5EF1EA885DD050BEF /* Pods-Above The Horizon.debug.xcconfig */,
+				60E38029A10CE5372071975A /* Pods-Above The Horizon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D4082BC92131803E008D87FD = {
 			isa = PBXGroup;
 			children = (
 				D4082BD42131803E008D87FD /* Above The Horizon */,
 				D4082BD32131803E008D87FD /* Products */,
+				A10B3960D131CBFBB9EBC180 /* Pods */,
+				4CB393A4D9F65D03F613B781 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +80,7 @@
 		D4082BD42131803E008D87FD /* Above The Horizon */ = {
 			isa = PBXGroup;
 			children = (
+				D4082BE921318636008D87FD /* layouts */,
 				D4082BD52131803E008D87FD /* AppDelegate.swift */,
 				D4082BD72131803E008D87FD /* ViewController.swift */,
 				D4082BD92131803E008D87FD /* Main.storyboard */,
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4082BE42131803F008D87FD /* Build configuration list for PBXNativeTarget "Above The Horizon" */;
 			buildPhases = (
+				3700AEA7FD35FEECABC9CA50 /* [CP] Check Pods Manifest.lock */,
 				D4082BCE2131803E008D87FD /* Sources */,
 				D4082BCF2131803E008D87FD /* Frameworks */,
 				D4082BD02131803E008D87FD /* Resources */,
+				390A5D53C406A271F20ABB2A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4082BEA21318636008D87FD /* layouts in Resources */,
 				D4082BE02131803F008D87FD /* LaunchScreen.storyboard in Resources */,
 				D4082BDD2131803F008D87FD /* Assets.xcassets in Resources */,
 				D4082BDB2131803E008D87FD /* Main.storyboard in Resources */,
@@ -129,6 +159,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3700AEA7FD35FEECABC9CA50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Above The Horizon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		390A5D53C406A271F20ABB2A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Above The Horizon/Pods-Above The Horizon-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Layout/Layout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Layout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Above The Horizon/Pods-Above The Horizon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D4082BCE2131803E008D87FD /* Sources */ = {
@@ -278,6 +347,7 @@
 		};
 		D4082BE52131803F008D87FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61598FB5EF1EA885DD050BEF /* Pods-Above The Horizon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +366,7 @@
 		};
 		D4082BE62131803F008D87FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60E38029A10CE5372071975A /* Pods-Above The Horizon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

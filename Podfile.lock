@@ -1,0 +1,18 @@
+PODS:
+  - Layout (0.6.27):
+    - Layout/Core (= 0.6.27)
+  - Layout/Core (0.6.27)
+
+DEPENDENCIES:
+  - Layout (~> 0.6)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Layout
+
+SPEC CHECKSUMS:
+  Layout: 3f0863cf53ecae3d128b74e5b4040d29ee9512ea
+
+PODFILE CHECKSUM: 396ec22e8d4a0370bf63988bad29cdaeaaf56cef
+
+COCOAPODS: 1.5.3

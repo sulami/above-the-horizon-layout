@@ -8,13 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+import Layout
+
+class ViewController: UIViewController, LayoutLoading {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        self.loadLayout(
+            named: "layouts/home.xml",
+            constants: [
+                "backgroundColor": UIColor.white
+            ]
+        )
     }
-
-
 }
 

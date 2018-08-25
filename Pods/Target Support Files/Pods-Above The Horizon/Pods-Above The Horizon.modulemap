@@ -1,0 +1,6 @@
+framework module Pods_Above_The_Horizon {
+  umbrella header "Pods-Above The Horizon-umbrella.h"
+
+  export *
+  module * { export * }
+}
