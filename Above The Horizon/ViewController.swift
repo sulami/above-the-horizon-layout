@@ -28,27 +28,29 @@ class ViewController: UIViewController, LayoutLoading, UITableViewDataSource, UI
 
     @IBOutlet var tableView: UITableView? {
         didSet {
-
-            // Register your cells after the tableView has been created
-            // the `didSet` handler for the tableView property is a good place
-            //tableView?.register(MyCellClass.self, forCellReuseIdentifier: "cell")
+            // This doesn't do anything.
         }
     }
 
     // TODO: Make this reactive or something.
-    var rowData: [Task] = [Task(title: "A New Hope")]
+    let tasks: [Task] = [
+        "A New Hope",
+        "The Empire Strikes Back",
+        "Return of the Jedi",
+        ].map({
+            title in Task(title: title)
+        })
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return rowData.count
+        return tasks.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
         // Use special Layout extension method to dequeue the node rather than the view itself
         let node = tableView.dequeueReusableCellNode(withIdentifier: "cell", for: indexPath)
 
         // Set the node state to update the cell
-        node.setState(rowData[indexPath.row])
+        node.setState(tasks[indexPath.row])
 
         // Cast the node view to a table cell and return it
         return node.view as! UITableViewCell

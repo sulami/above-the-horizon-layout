@@ -1,13 +1,4 @@
 <UIView backgroundColor="{backgroundColor}" xml="safe-area.xml">
-    <!-- <UILabel -->
-    <!--     width="100%" -->
-    <!--     top="50% - height / 2" -->
-    <!--     textAlignment="center" -->
-    <!--     textColor="red" -->
-    <!--     font="Menlo 32" -->
-    <!--     text="Hello, World!" -->
-    <!-- /> -->
-
     <UITableView
         backgroundColor="#fff"
         outlet="tableView"
