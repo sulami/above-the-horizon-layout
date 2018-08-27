@@ -63,7 +63,10 @@ class ViewController: UIViewController, LayoutLoading, UITableViewDataSource,
 
     func tableView(_ tableView: UITableView,
                    didSelectRowAt indexPath: IndexPath) {
-        let taskUUID = tasks[indexPath.row].uuid
-        
+        let task = tasks[indexPath.row]
+        let vc = TaskViewController()
+        vc.task = task
+    
+//        (vc, sender: self)
     }
 }

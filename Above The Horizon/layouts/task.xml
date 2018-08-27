@@ -1,0 +1,6 @@
+<UIView backgroundColor="{backgroundColor}" xml="safe-area.xml">
+    <UILabel
+        text="Hullo" />
+        <UIButton
+            title="back"/>
+</UIView>

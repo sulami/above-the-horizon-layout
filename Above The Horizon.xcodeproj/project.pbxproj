@@ -15,6 +15,8 @@
 		D4082BE02131803F008D87FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4082BDE2131803F008D87FD /* LaunchScreen.storyboard */; };
 		D4082BEA21318636008D87FD /* layouts in Resources */ = {isa = PBXBuildFile; fileRef = D4082BE921318636008D87FD /* layouts */; };
 		D4082BEC2131905C008D87FD /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4082BEB2131905C008D87FD /* Task.swift */; };
+		D4DEEE0621341A410067A639 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DEEE0521341A410067A639 /* TaskViewController.swift */; };
+		D4DEEE08213425460067A639 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DEEE07213425460067A639 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		D4082BE12131803F008D87FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4082BE921318636008D87FD /* layouts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = layouts; sourceTree = "<group>"; };
 		D4082BEB2131905C008D87FD /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		D4DEEE0521341A410067A639 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		D4DEEE07213425460067A639 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F993ADC1DCBDCEF942A7ECE2 /* Pods_Above_The_Horizon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Above_The_Horizon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -82,14 +86,16 @@
 		D4082BD42131803E008D87FD /* Above The Horizon */ = {
 			isa = PBXGroup;
 			children = (
-				D4082BE921318636008D87FD /* layouts */,
 				D4082BD52131803E008D87FD /* AppDelegate.swift */,
-				D4082BD72131803E008D87FD /* ViewController.swift */,
-				D4082BD92131803E008D87FD /* Main.storyboard */,
 				D4082BDC2131803F008D87FD /* Assets.xcassets */,
-				D4082BDE2131803F008D87FD /* LaunchScreen.storyboard */,
 				D4082BE12131803F008D87FD /* Info.plist */,
+				D4082BDE2131803F008D87FD /* LaunchScreen.storyboard */,
+				D4082BE921318636008D87FD /* layouts */,
+				D4082BD92131803E008D87FD /* Main.storyboard */,
+				D4DEEE07213425460067A639 /* MainViewController.swift */,
 				D4082BEB2131905C008D87FD /* Task.swift */,
+				D4DEEE0521341A410067A639 /* TaskViewController.swift */,
+				D4082BD72131803E008D87FD /* ViewController.swift */,
 			);
 			path = "Above The Horizon";
 			sourceTree = "<group>";
@@ -208,8 +214,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4082BD82131803E008D87FD /* ViewController.swift in Sources */,
+				D4DEEE0621341A410067A639 /* TaskViewController.swift in Sources */,
 				D4082BEC2131905C008D87FD /* Task.swift in Sources */,
 				D4082BD62131803E008D87FD /* AppDelegate.swift in Sources */,
+				D4DEEE08213425460067A639 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
