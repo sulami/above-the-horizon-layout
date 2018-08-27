@@ -13,8 +13,8 @@ class MainViewController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        self.viewControllers = [ViewController()]
+        self.setNavigationBarHidden(false, animated: false)
+        self.viewControllers = [TaskListController()]
     }
     
 

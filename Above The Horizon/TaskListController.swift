@@ -10,7 +10,7 @@ import UIKit
 
 import Layout
 
-class ViewController: UIViewController, LayoutLoading, UITableViewDataSource,
+class TaskListController: UIViewController, LayoutLoading, UITableViewDataSource,
     UITableViewDelegate {
 
     // TODO: Make this reactive or something.
@@ -66,7 +66,6 @@ class ViewController: UIViewController, LayoutLoading, UITableViewDataSource,
         let task = tasks[indexPath.row]
         let vc = TaskViewController()
         vc.task = task
-    
-//        (vc, sender: self)
+        show(vc, sender: self)
     }
 }
