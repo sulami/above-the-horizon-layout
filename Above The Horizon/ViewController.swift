@@ -60,4 +60,10 @@ class ViewController: UIViewController, LayoutLoading, UITableViewDataSource,
             // Cast the node view to a table cell and return it.
             return node.view as! UITableViewCell
     }
+
+    func tableView(_ tableView: UITableView,
+                   didSelectRowAt indexPath: IndexPath) {
+        let taskUUID = tasks[indexPath.row].uuid
+        
+    }
 }

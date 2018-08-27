@@ -9,9 +9,11 @@
 import Foundation
 
 class Task {
+    @objc dynamic var uuid: UUID
     @objc dynamic var title: String
 
     init(title: String) {
+        self.uuid = UUID()
         self.title = title
     }
 }
