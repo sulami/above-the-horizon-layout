@@ -10,8 +10,7 @@ import UIKit
 
 import Layout
 
-class TaskListController: UIViewController, LayoutLoading, UITableViewDataSource,
-    UITableViewDelegate {
+class TaskListController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
 
     // TODO: Make this reactive or something.
     let tasks: [Task] = [
@@ -23,11 +22,10 @@ class TaskListController: UIViewController, LayoutLoading, UITableViewDataSource
         })
 
     override func viewDidLoad() {
-        super.viewDidLoad() 
-        // Do any additional setup after loading the view, typically from a nib.
+        super.viewDidLoad()
 
         self.loadLayout(
-            named: "layouts/home.xml",
+            named: "Layouts/TaskList.xml",
             constants: [
                 "backgroundColor": UIColor.white
             ]
@@ -69,3 +67,4 @@ class TaskListController: UIViewController, LayoutLoading, UITableViewDataSource
         show(vc, sender: self)
     }
 }
+

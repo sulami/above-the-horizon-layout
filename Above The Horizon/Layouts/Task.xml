@@ -1,5 +1,5 @@
-<UIView xml="background.xml">
-    <UIView xml="safe-area.xml">
+<UIView xml="Background.xml">
+    <UIView xml="SafeArea.xml">
         <UILabel text="Title: {task.title}" />
     </UIView>
 </UIView>

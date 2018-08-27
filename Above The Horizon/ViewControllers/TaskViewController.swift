@@ -10,14 +10,14 @@ import UIKit
 
 import Layout
 
-class TaskViewController: UIViewController, LayoutLoading {
+class TaskViewController: BaseViewController {
     var task: Task?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.loadLayout(
-            named: "layouts/task.xml",
+            named: "Layouts/Task.xml",
             state: [
                 "task": task
             ],
