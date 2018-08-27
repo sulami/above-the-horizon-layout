@@ -10,7 +10,8 @@ import UIKit
 
 import Layout
 
-class ViewController: UIViewController, LayoutLoading, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController, LayoutLoading, UITableViewDataSource,
+    UITableViewDelegate {
 
     // TODO: Make this reactive or something.
     let tasks: [Task] = [
@@ -22,7 +23,7 @@ class ViewController: UIViewController, LayoutLoading, UITableViewDataSource, UI
         })
 
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad() 
         // Do any additional setup after loading the view, typically from a nib.
 
         self.loadLayout(
@@ -41,18 +42,22 @@ class ViewController: UIViewController, LayoutLoading, UITableViewDataSource, UI
         }
     }
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int)
+            -> Int {
         return tasks.count
     }
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // Use special Layout extension method to dequeue the node rather than the view itself
-        let node = tableView.dequeueReusableCellNode(withIdentifier: "cell", for: indexPath)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)
+        -> UITableViewCell {
+            // Use special Layout extension method to dequeue the node rather
+            // than the view itself.
+            let node = tableView.dequeueReusableCellNode(
+                withIdentifier: "cell", for: indexPath)
 
-        // Set the node state to update the cell
-        node.setState(tasks[indexPath.row])
+            // Set the node state to update the cell.
+            node.setState(tasks[indexPath.row])
 
-        // Cast the node view to a table cell and return it
-        return node.view as! UITableViewCell
+            // Cast the node view to a table cell and return it.
+            return node.view as! UITableViewCell
     }
 }
