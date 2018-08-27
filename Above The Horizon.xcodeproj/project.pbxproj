@@ -86,12 +86,28 @@
 				D4082BDC2131803F008D87FD /* Assets.xcassets */,
 				D4082BE12131803F008D87FD /* Info.plist */,
 				D4082BE921318636008D87FD /* layouts */,
+				D4DEEE0A2134513C0067A639 /* Models */,
+				D4DEEE09213451120067A639 /* ViewControllers */,
+			);
+			path = "Above The Horizon";
+			sourceTree = "<group>";
+		};
+		D4DEEE09213451120067A639 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
 				D4DEEE07213425460067A639 /* MainViewController.swift */,
-				D4082BEB2131905C008D87FD /* Task.swift */,
 				D4082BD72131803E008D87FD /* TaskListController.swift */,
 				D4DEEE0521341A410067A639 /* TaskViewController.swift */,
 			);
-			path = "Above The Horizon";
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D4DEEE0A2134513C0067A639 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D4082BEB2131905C008D87FD /* Task.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +354,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6KZQ4R79ZN;
 				INFOPLIST_FILE = "Above The Horizon/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -357,6 +374,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6KZQ4R79ZN;
 				INFOPLIST_FILE = "Above The Horizon/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
