@@ -1,13 +1,15 @@
-<UIView backgroundColor="{backgroundColor}" xml="safe-area.xml">
-    <UITableView
-        backgroundColor="#fff"
-        outlet="tableView"
-        separatorStyle="none"
-        rowHeight="64"
-        style="plain">
-      <UITableViewCell
-          reuseIdentifier="cell"
-          textLabel.text="{title}"
-          />
-    </UITableView>
+<UIView xml="background.xml">
+    <UIView xml="safe-area.xml">
+        <UITableView
+            backgroundColor="#fff"
+            outlet="tableView"
+            separatorStyle="none"
+            rowHeight="64"
+            style="plain">
+            <UITableViewCell
+            reuseIdentifier="cell"
+            textLabel.text="{title}"
+            />
+        </UITableView>
+    </UIView>
 </UIView>

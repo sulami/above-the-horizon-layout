@@ -16,7 +16,10 @@ class MainViewController: UINavigationController {
         self.navigationBar.isHidden = true
         self.viewControllers = [TaskListController()]
     }
-    
+
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return UIStatusBarStyle.default
+    }
 
     /*
     // MARK: - Navigation

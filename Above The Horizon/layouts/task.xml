@@ -1,3 +1,5 @@
-<UIView backgroundColor="{backgroundColor}" xml="safe-area.xml">
-    <UILabel text="Title: {task.title}" />
+<UIView xml="background.xml">
+    <UIView xml="safe-area.xml">
+        <UILabel text="Title: {task.title}" />
+    </UIView>
 </UIView>

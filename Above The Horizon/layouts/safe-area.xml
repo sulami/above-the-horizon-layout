@@ -1,6 +1,5 @@
 <UIView
-    top="safeAreaInsets.top"
-    left="safeAreaInsets.left"
-    bottom="100% - safeAreaInsets.bottom"
-    right="100% - safeAreaInsets.right">
-</UIView>
+top="safeAreaInsets.top"
+left="safeAreaInsets.left"
+bottom="100% - safeAreaInsets.bottom"
+right="100% - safeAreaInsets.right" />
