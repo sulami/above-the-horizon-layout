@@ -16,13 +16,11 @@ class TaskViewController: UIViewController, LayoutLoading {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        debugPrint(task)
-
         self.loadLayout(
             named: "layouts/task.xml",
-//            state: [
-//                "task": nil
-//            ],
+            state: [
+                "task": task
+            ],
             constants: [
                 "backgroundColor": UIColor.white
             ]

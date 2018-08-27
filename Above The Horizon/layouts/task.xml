@@ -1,6 +1,3 @@
 <UIView backgroundColor="{backgroundColor}" xml="safe-area.xml">
-    <UILabel
-        text="Hullo" />
-        <UIButton
-            title="back"/>
+    <UILabel text="Title: {task.title}" />
 </UIView>
