@@ -8,6 +8,7 @@
             style="plain">
             <UITableViewCell
             reuseIdentifier="cell"
+            selectionStyle="{UITableViewCell.SelectionStyle.none}"
             textLabel.text="{title}"
             />
         </UITableView>
