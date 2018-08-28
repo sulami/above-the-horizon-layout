@@ -1,5 +1,17 @@
 <UIView xml="Background.xml">
     <UIView xml="SafeArea.xml">
-        <UILabel text="Title: {task.title}" />
+        <UITableView
+            style="plain"
+            >
+            <UITableViewCell
+                reuseIdentifier="text"
+                textLabel.text="{labelText}"
+                >
+                <UILabel
+                    text="{contentText}"
+                    font="12"
+                    />
+            </UITableViewCell>
+        </UITableView>
     </UIView>
 </UIView>

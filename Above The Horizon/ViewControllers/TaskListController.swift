@@ -41,8 +41,8 @@ class TaskListController: BaseViewController, UITableViewDataSource, UITableView
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int)
-            -> Int {
-        return tasks.count
+        -> Int {
+            return tasks.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)
@@ -59,8 +59,7 @@ class TaskListController: BaseViewController, UITableViewDataSource, UITableView
             return node.view as! UITableViewCell
     }
 
-    func tableView(_ tableView: UITableView,
-                   didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let task = tasks[indexPath.row]
         let vc = TaskViewController()
         vc.task = task

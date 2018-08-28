@@ -10,7 +10,7 @@ import UIKit
 
 import Layout
 
-class TaskViewController: BaseViewController {
+class TaskViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
     var task: Task?
 
     override func viewDidLoad() {
@@ -26,16 +26,30 @@ class TaskViewController: BaseViewController {
             ]
         )
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int)
+        -> Int {
+            return 2
     }
-    */
 
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)
+        -> UITableViewCell {
+            // Use special Layout extension method to dequeue the node rather
+            // than the view itself.
+            let node = tableView.dequeueReusableCellNode(
+                withIdentifier: "text", for: indexPath)
+
+            let text: String = indexPath.row == 0
+                ? task!.uuid.uuidString
+                : task!.title
+
+            // Set the node state to update the cell.
+            node.setState([
+                "labelText": indexPath.row == 0 ? "UUID" : "Title",
+                "contentText": text,
+                ])
+
+            // Cast the node view to a table cell and return it.
+            return node.view as! UITableViewCell
+    }
 }
