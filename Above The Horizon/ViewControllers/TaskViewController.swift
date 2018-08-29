@@ -22,7 +22,10 @@ class TaskViewController: BaseViewController, UITableViewDataSource, UITableView
                 "task": task
             ],
             constants: [
-                "backgroundColor": UIColor.white
+                "backgroundColor": UIColor.white,
+                // These are overridden on a per-case basis.
+                "labelText": "",
+                "contentText": "",
             ]
         )
     }
