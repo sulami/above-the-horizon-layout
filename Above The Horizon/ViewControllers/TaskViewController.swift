@@ -30,9 +30,14 @@ class TaskViewController: BaseViewController, UITableViewDataSource, UITableView
         )
     }
 
+    let dataRows: [(String, (Task) -> String)] = [
+        ("UUID", {$0.uuid.uuidString}),
+        ("Title", {$0.title}),
+        ]
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int)
         -> Int {
-            return 2
+            return dataRows.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)
@@ -42,14 +47,13 @@ class TaskViewController: BaseViewController, UITableViewDataSource, UITableView
             let node = tableView.dequeueReusableCellNode(
                 withIdentifier: "text", for: indexPath)
 
-            let text: String = indexPath.row == 0
-                ? task!.uuid.uuidString
-                : task!.title
+            let text = dataRows[indexPath.row].0
+            let content = dataRows[indexPath.row].1(task!)
 
             // Set the node state to update the cell.
             node.setState([
-                "labelText": indexPath.row == 0 ? "UUID" : "Title",
-                "contentText": text,
+                "labelText": text,
+                "contentText": content,
                 ])
 
             // Cast the node view to a table cell and return it.
