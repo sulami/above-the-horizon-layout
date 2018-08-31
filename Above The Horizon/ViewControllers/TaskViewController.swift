@@ -17,7 +17,7 @@ class TaskViewController: BaseViewController, UITableViewDataSource, UITableView
         super.viewDidLoad()
 
         self.loadLayout(
-            named: "Layouts/Task.xml",
+            named: "Layouts/Screens/Task.xml",
             state: [
                 "task": task
             ],
@@ -30,9 +30,9 @@ class TaskViewController: BaseViewController, UITableViewDataSource, UITableView
         )
     }
 
-    let dataRows: [(String, (Task) -> String)] = [
-        ("UUID", {$0.uuid.uuidString}),
-        ("Title", {$0.title}),
+    let dataRows: [(String, String, (Task) -> String)] = [
+        ("UUID", "textLabel", {$0.uuid.uuidString}),
+        ("Title", "textField", {$0.title}),
         ]
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int)
@@ -45,10 +45,10 @@ class TaskViewController: BaseViewController, UITableViewDataSource, UITableView
             // Use special Layout extension method to dequeue the node rather
             // than the view itself.
             let node = tableView.dequeueReusableCellNode(
-                withIdentifier: "text", for: indexPath)
+                withIdentifier: dataRows[indexPath.row].1, for: indexPath)
 
             let text = dataRows[indexPath.row].0
-            let content = dataRows[indexPath.row].1(task!)
+            let content = dataRows[indexPath.row].2(task!)
 
             // Set the node state to update the cell.
             node.setState([

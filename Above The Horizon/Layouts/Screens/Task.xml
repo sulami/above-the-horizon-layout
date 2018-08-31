@@ -1,0 +1,45 @@
+<UIView xml="../Components/Background.xml">
+    <UIView xml="../Components/SafeArea.xml">
+        <UITableView
+            style="plain"
+            >
+            <UITableViewCell
+                xml="../Components/BasicTableCell.xml"
+                reuseIdentifier="textLabel"
+                >
+                <UIStackView
+                    axis="horizontal"
+                    alignment="{UIStackView.Alignment.center}"
+                    distribution="{UIStackView.Distribution.fill}"
+                    left="10"
+                    right="100% - 10"
+                    height="100%">
+                    <UILabel
+                        text="{contentText}"
+                        font="Menlo 12"
+                        width="100%"
+                        />
+                </UIStackView>
+            </UITableViewCell>
+            <UITableViewCell
+                xml="../Components/BasicTableCell.xml"
+                reuseIdentifier="textField"
+                >
+                <UIStackView
+                    axis="horizontal"
+                    alignment="{UIStackView.Alignment.center}"
+                    distribution="{UIStackView.Distribution.equalSpacing}"
+                    left="10"
+                    right="100% - 10"
+                    height="100%">
+                    <UILabel
+                        text="{labelText}"
+                        />
+                    <UITextField
+                        text="{contentText}"
+                        />
+                </UIStackView>
+            </UITableViewCell>
+        </UITableView>
+    </UIView>
+</UIView>

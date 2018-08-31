@@ -25,7 +25,7 @@ class TaskListController: BaseViewController, UITableViewDataSource, UITableView
         super.viewDidLoad()
 
         self.loadLayout(
-            named: "Layouts/TaskList.xml",
+            named: "Layouts/Screens/TaskList.xml",
             constants: [
                 "backgroundColor": UIColor.white
             ]

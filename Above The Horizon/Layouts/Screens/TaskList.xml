@@ -1,0 +1,16 @@
+<UIView xml="../Components/Background.xml">
+    <UIView xml="../Components/SafeArea.xml">
+        <UITableView
+            backgroundColor="#fff"
+            outlet="tableView"
+            separatorStyle="none"
+            rowHeight="64"
+            style="plain">
+            <UITableViewCell
+                reuseIdentifier="cell"
+                selectionStyle="{UITableViewCell.SelectionStyle.none}"
+                textLabel.text="{title}"
+                />
+        </UITableView>
+    </UIView>
+</UIView>
