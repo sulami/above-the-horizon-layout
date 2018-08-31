@@ -4,7 +4,7 @@
             style="plain"
             >
             <UITableViewCell
-                xml="../Components/BasicTableCell.xml"
+                selectionStyle="{UITableViewCell.SelectionStyle.none}"
                 reuseIdentifier="textLabel"
                 >
                 <UIStackView
@@ -22,7 +22,7 @@
                 </UIStackView>
             </UITableViewCell>
             <UITableViewCell
-                xml="../Components/BasicTableCell.xml"
+                selectionStyle="{UITableViewCell.SelectionStyle.none}"
                 reuseIdentifier="textField"
                 >
                 <UIStackView
