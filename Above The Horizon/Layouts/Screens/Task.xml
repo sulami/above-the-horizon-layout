@@ -2,6 +2,7 @@
     <UIView xml="../Components/SafeArea.xml">
         <UITableView
             style="plain"
+            separatorStyle="none"
             >
             <UITableViewCell
                 selectionStyle="{UITableViewCell.SelectionStyle.none}"
@@ -16,7 +17,8 @@
                     height="100%">
                     <UILabel
                         text="{contentText}"
-                        font="Menlo 12"
+                        textAlignment="center"
+                        font="Menlo 10"
                         width="100%"
                         />
                 </UIStackView>

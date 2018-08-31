@@ -31,7 +31,7 @@ class TaskViewController: BaseViewController, UITableViewDataSource, UITableView
     }
 
     let dataRows: [(String, String, (Task) -> String)] = [
-        ("UUID", "textLabel", {$0.uuid.uuidString}),
+        ("UUID", "textLabel", {"UUID: " + $0.uuid.uuidString}),
         ("Title", "textField", {$0.title}),
         ]
 
