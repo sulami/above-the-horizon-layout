@@ -5,6 +5,7 @@
             outlet="tableView"
             separatorStyle="none"
             rowHeight="64"
+            height="parent.height"
             style="plain">
             <UITableViewCell
                 reuseIdentifier="cell"
@@ -12,5 +13,15 @@
                 textLabel.text="{title}"
                 />
         </UITableView>
+        <UIButton
+            title="blob"
+            width="parent.width - 20"
+            left="10"
+            backgroundColor="UIColor.gray"
+            touchUpInside="alert"
+            titleColor="black"
+            top="previous.bottom - 40"
+            height="30"
+            />
     </UIView>
 </UIView>
