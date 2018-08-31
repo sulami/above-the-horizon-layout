@@ -39,6 +39,8 @@
                         />
                     <UITextField
                         text="{contentText}"
+                        borderStyle="{UITextField.BorderStyle.roundedRect}"
+                        width="parent.width / 2"
                         />
                 </UIStackView>
             </UITableViewCell>

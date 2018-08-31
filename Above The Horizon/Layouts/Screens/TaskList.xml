@@ -14,10 +14,10 @@
                 />
         </UITableView>
         <UIButton
-            title="blob"
+            title="New Task"
             width="parent.width - 20"
             left="10"
-            backgroundColor="UIColor.gray"
+            backgroundColor="UIColor.lightGray"
             touchUpInside="alert"
             titleColor="black"
             top="previous.bottom - 40"

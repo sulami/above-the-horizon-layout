@@ -12,6 +12,10 @@ class Task {
     @objc dynamic var uuid: UUID
     @objc dynamic var title: String
 
+    convenience init() {
+        self.init(title: "")
+    }
+
     init(title: String) {
         self.uuid = UUID()
         self.title = title

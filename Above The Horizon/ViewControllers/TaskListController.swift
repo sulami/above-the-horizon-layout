@@ -33,7 +33,7 @@ class TaskListController: BaseViewController, UITableViewDataSource, UITableView
     }
 
     @IBAction func alert() {
-        debugPrint("Pressed a button.")
+        show(TaskViewController(), sender: self)
     }
 
     // MARK: - TableView Stuff

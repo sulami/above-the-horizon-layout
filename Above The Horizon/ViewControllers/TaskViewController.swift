@@ -16,6 +16,10 @@ class TaskViewController: BaseViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if task == nil {
+            task = Task()
+        }
+
         self.loadLayout(
             named: "Layouts/Screens/Task.xml",
             state: [
